@@ -1,6 +1,8 @@
 # Strings, integers, variables
 # Simple methods, string interpolation
 
+#Hi, I made a change to this file
+
 # The essential pattern in Ruby:
 #    variable = object.method
 first = "raghu".capitalize

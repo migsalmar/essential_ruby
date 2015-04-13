@@ -32,7 +32,6 @@ def sum(list_of_numbers)
   list_of_numbers.each do |number|
     running_total = running_total + number
   end
-
   return running_total
 end
 
@@ -43,29 +42,32 @@ end
 #  - then we divide the sum by the number of elements in the set
 
 def mean(list_of_numbers)
-  # Let's re-use the work we did above in the sum method
-
+  #  Let's re-use the work we did above in #the sum method
   # ====================
-  # Your code goes here.
+  mean_denom=list_of_numbers.length
+  mean = (sum(list_of_numbers)/(mean_denom.to_f))
   # ====================
 end
 
-# VARIANCE
-# ========
-# To find the variance of a set,
-#  - we find the mean of the set
-#  - for each number in the set,
-#   - we find the difference between the number and the mean
-#   - we square the difference
-#  - the variance is the mean of the squared differences
+  #  - we find the mean of the set
+  #  - for each number in the set,
+  #   - we find the difference between the number and the mean
+  #   - we square the difference
+  #  - the variance is the mean of the squared differences
 
 def variance(list_of_numbers)
-  # Let's re-use the work we did above in the mean method
+    # Let's re-use the work we did above in the mean method
+    # ====================
+    variance_total = 0
 
-  # ====================
-  # Your code goes here.
-  # ====================
-end
+
+      list_of_numbers.each do |number|
+        variance_total = variance_total + (number - mean(list_of_numbers))**2
+      end
+      mean_denom=list_of_numbers.length
+      return (variance_total/mean_denom)
+    # ====================
+  end
 
 # STANDARD DEVIATION
 # ==================
@@ -74,7 +76,7 @@ end
 
 def standard_deviation(list_of_numbers)
   # ====================
-  # Your code goes here.
+  standard_deviation=variance(list_of_numbers)**0.5
   # ====================
 end
 

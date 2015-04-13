@@ -1,0 +1,33 @@
+#irb - Ruby Sandbox
+# assignment =; equivalence ==
+Array automatically numbers tokens
+Hashes is a list where you have to name each token
+
+you can either do print_heading("Students") or print_heading "Students", but stick to just one, don't do both.
+
+
+API format - JSON
+
+facebook has a tool for developers to use API but we can
+parallel to my facebook page for machiens.
+
+javascript version of a Ruby hash
+
+
+read a remote API in ruby
+
+Homework is to practice with API; get google directions API and get a street address with lattitude and longitude.
+then use the weater app Dark Skye to do the same and get them to both do the same.  Long guide that goes over everything.
+Homework - write in the context of rails.
+
+rails new "appname"
+
+routes under config is the master list of applications.
+pages control - you can write any ruby in it.
+makes first letter of a variable an @ symbol.   instant variable lives longer than a normal variable or enough to make it to the view template.
+
+Pretend you are writing Ruby as you know it only.  YOu will create an instance variable and write the instance variable.  put the output into the instance variable.
+
+
+<%=  %> - embedded ruby file
+ls>output.txt
